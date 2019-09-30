@@ -1,7 +1,10 @@
 <p>my-button works!</p>
-
-<button (click)="buttonPressed()">
-  Like 
+<!-- used ngClass to access my .css file???-->
+<!-- 'is-liked' => is a CSS class and serves as the key of the key/value pair-->
+<!-- when the value portion of key/value pair evaluates to true the class is applied to the element-->
+<!-- i used bTrigger as part of the value so it will toggle each time the button is pressed and the function is called to switch it-->
+<button (click)="buttonPressed()" [ngClass]="{'is-liked': bTrigger == true}">
+  Like
 </button>
 
 <span>
