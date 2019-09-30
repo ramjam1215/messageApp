@@ -22,8 +22,9 @@ export class MyButtonComponent implements OnInit {
 
   //feels funky, fix it
   buttonPressed(): void {
-    console.log(`button pressed.... Value currently: ${this.bTrigger}`);
-    //this.bTrigger = this.myService.likeImage(this.bTrigger);
+    console.log(`button pressed....Before Function call: ${this.bTrigger}`);
+    this.bTrigger = this.myService.likeImage(this.bTrigger);
+    console.log(`button pressed....After Function call: ${this.bTrigger}`);
   }
 
 }

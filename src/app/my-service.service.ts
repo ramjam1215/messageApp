@@ -1,4 +1,5 @@
 import { Injectable, Input } from '@angular/core';
+import { not } from '@angular/compiler/src/output/output_ast';
 
 //SERVICE
 //When you provide the service at the root level, Angular creates a single,
@@ -15,10 +16,19 @@ export class MyServiceService {
 
   constructor() { }
 
-  //feels funky fix it, and refer to Q1 in hw2
+  //Practice code, will change for final submission
   likeImage(notice: boolean): boolean {
     console.log("Image liked");
-    notice = true
+
+    if (notice) {
+      notice = false;
+    }
+
+    else {
+      notice = true;
+    }
+
     return notice;
   }
+
 }
