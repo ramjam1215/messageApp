@@ -10,7 +10,7 @@ finished most of problem 1
 - I also added the my-service, which is located within the my-button component.
 -my-service will take the bTrigger property from my-button and change it to the opposite boolean value(proof of concept right now)
 - I still need to render the image, it doesn't seem to want to show me the image so i have an alternate text string for now(i need to post on Slack)
-- I am seeing a 
+- I am seeing a Cross-Origin Read Blocking when the app tries to load the image. Need to focus on this now
 
 finished problem 2
 -dealt with css and ngClass; i needed to use a key:value pair to toggle the class being used on the button element.
