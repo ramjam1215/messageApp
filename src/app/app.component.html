@@ -4,10 +4,20 @@
 
   <h1>{{ title }} app is running!</h1>
   <h2>By: {{ author }} </h2>
-  <h3>
-    <app-my-image></app-my-image>
-    <app-my-button></app-my-button>
-  </h3>
+
+  <app-my-image></app-my-image>
+
+  <!--FIX THIS -->
+  <div *ngIf="mArray.mList?.length > 0">
+    <ul>
+      <li *ngFor="let m of mArray.mList">
+          Timestamp: {{m.timestamp}} , message: {{m.text}}
+      </li>
+    </ul>
+  </div>
+  <!--END OF FIX AREA -->
+
+  <app-my-button></app-my-button>
 </div>
 
 
