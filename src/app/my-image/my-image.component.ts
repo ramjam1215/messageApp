@@ -13,13 +13,9 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class MyImageComponent implements OnInit {
-  image: string;
 
-  constructor() {
-    this.image = 'https://images.app.goo.gl/4bCeemd32fvrhYEj6';
-  }
+  constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }
