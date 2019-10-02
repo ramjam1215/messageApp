@@ -11,7 +11,7 @@ finished problem 1
 - I rendered my own image that i saved in the assets folder (FYI: its an appropriate image, i hope you enjoy).
 
 finished problem 2
--dealt with css and ngClass; i needed to use a key:value pair to toggle the class being used on the button element.
+- dealt with css and ngClass; i needed to use a key:value pair to toggle the class being used on the button element.
 
 Finished problems 3 & 4
 - I added the models folder, which has some really basic classes, properties, and functions
